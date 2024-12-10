@@ -1,0 +1,49 @@
+/* ////////////////////////////////////////
+                BREADCRUMBS
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+.breadcrumbs {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-2);
+    grid-row: 1;
+}
+
+.breadcrumbs li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-4);
+    color: var(--text-minimal);
+    cursor: pointer;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url("../../assets/images/icon-chevron.svg");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+}
+
+/* ########## MOBILE & TABLET ########## */
+
+@media screen and (max-width: 1100px) {
+    .breadcrumbs {
+        grid-column: 1 / span 6;
+    }
+}
+
+/* ########## MEDIUM DESKTOP & LARGE DESKTOP ########## */
+
+@media screen and (min-width: 1101px){
+    .breadcrumbs {
+        grid-column: 9 / span 4;
+    }    
+}

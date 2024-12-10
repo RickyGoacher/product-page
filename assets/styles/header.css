@@ -1,0 +1,78 @@
+/* ////////////////////////////////////////
+            HEADER & NAVIGATION
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-5) 0;
+    border-bottom: solid 1px var(--border-minimal);
+}
+
+.header-content-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul,
+header .header-actions ul {
+    display: flex;
+    gap: var(--spacing-8);
+}
+
+header nav ul li,
+header .header-actions ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    cursor: pointer;
+}
+
+/* ########## MOBILE & TABLET ########## */
+
+@media screen and (max-width: 1100px) {
+    header nav {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    header .header-actions ul li:not(:last-child) {
+        display: none;
+    }
+}
+
+/* ########## MEDIUM DESKTOP & LARGE DESKTOP ########## */
+
+@media screen and (min-width: 1101px) {
+    header nav {
+        display: block;
+    }
+    .menu-icon {
+        display: none;
+    }
+}

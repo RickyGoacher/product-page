@@ -1,0 +1,46 @@
+/* ////////////////////////////////////////
+                STAR RATING
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.star-rating ul {
+    display: flex;    
+    gap: var(--spacing-2);
+}
+
+.star-rating ul li {
+    list-style: none;
+}
+
+.star--full,
+.star--half {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.star--full {
+    background-image: url("../images/icon-star--solid.svg");
+}
+
+.star--half {
+    background-image: url("../images/icon-star--half.svg");
+}
+
+.star--empty {
+    background-image: url("../images/icon-star--empty.svg");
+}
+
+.count {
+    color: var(--text-minimal);
+}

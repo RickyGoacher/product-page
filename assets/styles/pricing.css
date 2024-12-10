@@ -1,0 +1,23 @@
+/* ////////////////////////////////////////
+                PRICING
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+.price-container {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.price {
+    color: var(--text-primary);
+}
+
+.special-price,
+.pooch-points {
+    color: var(--text-brand);
+}
+
+.old-price {
+    text-decoration: line-through;
+}

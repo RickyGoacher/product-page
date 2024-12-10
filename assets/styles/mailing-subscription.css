@@ -1,0 +1,31 @@
+/* ////////////////////////////////////////
+            EMAIL SUBSCRIPTION FORM
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+.email-subscription-container {
+    background-color: var(--surface-secondary);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-medium);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.email-subscription-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-3);
+}
+
+.email-subscription-container input[type="text"] {
+    width: 100%;
+}
+
+.terms-and-conditions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+}

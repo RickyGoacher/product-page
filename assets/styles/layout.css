@@ -1,0 +1,83 @@
+/* ////////////////////////////////////////
+            PAGE LAYOUT GRID
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+main {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, var(--spacing-8));
+}
+
+/* ########## MOBILE ########## */
+
+@media screen and (max-width: 700px) {
+    main,
+    .header-content-wrapper {
+        margin-left: var(--spacing-6);
+        margin-right: var(--spacing-6);
+    }
+    main {
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: var(--spacing-6);
+        row-gap: var(--spacing-6);
+        padding-top: var(--spacing-5);
+    }
+}
+
+/* ########## TABLET ########## */
+
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    main,
+    .header-content-wrapper {
+        margin-left: var(--spacing-9);
+        margin-right: var(--spacing-9);
+    }
+    main {
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: var(--spacing-8);
+        row-gap: var(--spacing-8);
+        padding-top: var(--spacing-6);
+    }
+}
+
+/* ########## MEDIUM DESKTOP ########## */
+
+@media screen and (min-width: 1101px) and (max-width: 1500px) {
+    main,
+    .header-content-wrapper {
+        max-width: 1360px;
+        margin-left: var(--spacing-10);
+        margin-right: var(--spacing-10);
+    }
+    header {
+        max-width: 1360px;
+    }
+    main {
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: var(--spacing-10);
+        padding-top: var(--spacing-7);
+    }
+}
+
+/* ########## LARGE DESKTOP ########## */
+
+@media screen and (min-width: 1500px) {
+    main,
+    .header-content-wrapper {
+        max-width: 1680px;
+    }
+    header {
+        max-width: 1680px;
+    }
+    main {
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: var(--spacing-15);
+        padding-top: var(--spacing-7);
+    }
+    body {
+        margin-left: var(--spacing-15);
+        margin-right: var(--spacing-15);
+    }
+}

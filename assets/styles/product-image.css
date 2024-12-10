@@ -1,0 +1,52 @@
+/* ////////////////////////////////////////
+            PRODUCT IMAGE
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+.product-image .primary-image {
+    width: 100%;
+}
+
+.product-image .primary-image img {
+    width: 100%;
+}
+
+.product-image .image-list li {
+    list-style: none;
+}
+
+.product-image .image-list .active img {
+    border: solid 2px var(--border-primary);
+}
+
+/* ########## MOBILE & TABLET ########## */
+
+@media screen and (max-width: 1100px) {
+    .product-image {
+        display: flex;
+        grid-column: 1 / span 6;
+        margin: calc(var(--spacing-6) * -1);
+    }
+    .product-image .image-list ul {
+        display: none;
+    }
+}
+
+/* ########## MEDIUM DESKTOP & LARGE DESKTOP ########## */
+
+@media screen and (min-width: 1101px) {
+    .product-image {
+        display: flex;
+        gap: var(--spacing-6);
+        grid-column: 1 / span 8;
+    }
+    .product-image .image-list ul {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-5);
+    }
+    .product-image img {
+        border-radius: var(--radius-medium);
+    }
+}

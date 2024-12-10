@@ -1,0 +1,62 @@
+/* ////////////////////////////////////////
+            PRODUCT INFORMATION
+//////////////////////////////////////////*/
+
+/* ########## GLOBAL ########## */
+
+#add-to-basket-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.product-information {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+/* ########## MOBILE ########## */
+
+@media screen and (max-width: 700px) {
+    .product-information {
+        grid-column: 1 / span 6;
+    }
+
+    .product-description {
+        border-bottom: solid 1px var(--border-minimal);
+        padding-bottom: var(--spacing-6);
+    }
+
+    .add-to-basket {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: var(--spacing-5) var(--spacing-6) var(--spacing-8);
+        box-shadow: 0px -12px 15px -3px rgba(0,0,0,0.1);
+        background-color: var(--surface-primary);
+    }
+}
+
+/* ########## TABLET ########## */
+
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    .product-information {
+        grid-column: 1 / span 6;
+    }
+}
+
+/* ########## MEDIUM DESKTOP & LARGE DESKTOP ########## */
+
+@media screen and (min-width: 1101px) {
+    .product-information {
+        grid-column: 9 / span 4;
+    }
+}

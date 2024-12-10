@@ -1,0 +1,129 @@
+/* ////////////////////////////////////////
+        GLOBAL STYLES & VARIABLES
+//////////////////////////////////////////*/
+
+/* ########## RESET ########## */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+
+    /* ########## BLACK TINTS ########## */
+
+    --black-2: rgba(0 0 0 / 2%);
+    --black-4: rgba(0 0 0 / 4%);
+    --black-6: rgba(0 0 0 / 6%);
+    --black-8: rgba(0 0 0 / 8%);
+    --black-10: rgba(0 0 0 / 10%);
+    --black-15: rgba(0 0 0 / 15%);
+    --black-20: rgba(0 0 0 / 20%);
+    --black-30: rgba(0 0 0 / 30%);
+    --black-40: rgba(0 0 0 / 40%);
+    --black-50: rgba(0 0 0 / 50%);
+    --black-60: rgba(0 0 0 / 60%);
+    --black-70: rgba(0 0 0 / 70%);
+    --black-80: rgba(0 0 0 / 80%);
+    --black-90: rgba(0 0 0 / 90%);
+
+    /* ########## NEUTRAL ########## */
+
+    --neutral-0: #FFFFFF;
+    --neutral-50: #F2F2F2;
+    --neutral-100: #E5E5E5;
+    --neutral-150: #D8D8D8;
+    --neutral-200: #CCCCCC;
+    --neutral-300: #B2B2B2;
+    --neutral-400: #999999;
+    --neutral-500: #808080;
+    --neutral-600: #666666;
+    --neutral-700: #4C4C4C;
+    --neutral-800: #333333;
+    --neutral-900: #191919;
+    --neutral-1000: #000000;
+
+    /* ########## CREAM ########## */
+
+    --cream-50: #FFFCF6;
+    --cream-100: #FFF9EC;
+    --cream-200: #F5EFE3;
+    --cream-300: #EBE5D9;
+    --cream-400: #EBE5D9;
+    --cream-500: #D6D1C6;
+    --cream-600: #CCC9BD;
+    --cream-700: #C2BDB3;
+
+    /* ########## PURPLE ########## */
+
+    --purple-50: #FBF4FB;
+    --purple-100: #F1DCF1;
+    --purple-200: #EACBEB;
+    --purple-300: #E1B3E2;
+    --purple-400: #DBA5DC;
+    --purple-500: #D28ED3;
+    --purple-600: #BF81C0;
+    --purple-700: #956596;
+    --purple-800: #744E74;
+    --purple-900: #583C59;
+
+    /* ########## TEXT ########## */
+
+    --text-primary: var(--neutral-1000);
+    --text-secondary: var(--neutral-700);
+    --text-minimal: var(--neutral-400);
+    --text-disabled: var(--neutral-150);
+    --text-invert: var(--neutral-0);
+    --text-brand: var(--purple-500);
+
+    /* ########## SURFACE ########## */
+
+    --surface-primary: var(--neutral-0);
+    --surface-secondary: var(--cream-200);
+    --surface-invert: var(--neutral-1000);
+    --surface-brand: var(--purple-50);
+
+    /* ########## BORDER ########## */
+
+    --border-primary: var(--neutral-1000);
+    --border-secondary: var(--black-30);
+    --border-minimal: var(--black-15);
+    --border-invert: var(--neutral-0);
+    --outline: rgba(0 56 255 / 50%);
+
+    /* ########## SPACINGS ########## */
+
+    --spacing-0: 0;
+    --spacing-1: 2px;
+    --spacing-2: 4px;
+    --spacing-3: 6px;
+    --spacing-4: 8px;
+    --spacing-5: 12px;
+    --spacing-6: 16px;
+    --spacing-7: 20px;
+    --spacing-8: 24px;
+    --spacing-9: 32px;
+    --spacing-10: 40px;
+    --spacing-11: 60px;
+    --spacing-12: 80px;
+    --spacing-13: 120px;
+    --spacing-14: 160px;
+    --spacing-15: 48px; /* Missing from design */
+
+    /* ########## BORDER-RADIUS ########## */
+
+    --radius-small: var(--spacing-2);
+    --radius-medium: var(--spacing-4);
+    --radius-large: var(--spacing-7);
+    --radius-full: 99999px;
+}
+
